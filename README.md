@@ -1,5 +1,3 @@
-# Digital-Logic-Designs-Logisim
-
 # 🔌 Welcome to the Digital-Logic-Designs-Logisim Repo!
 > **I'm the README.md file of this folder, here to guide you step-by-step!** 🚀
 
