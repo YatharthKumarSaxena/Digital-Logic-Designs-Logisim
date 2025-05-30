@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif bold 20"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif bold 20"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+  </circuit>
+  <circuit name="Half_Subtractor">
+    <a name="circuit" val="Half_Subtractor"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M482,181 Q510,201 532,180" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="151" stroke="#000000" stroke-width="2" width="179" x="421" y="180"/>
+      <text font-family="SansSerif" font-size="20" font-weight="bold" text-anchor="middle" x="513" y="263">Half Subtractor</text>
+      <circ-port height="8" pin="450,350" width="8" x="416" y="206"/>
+      <circ-port height="8" pin="450,390" width="8" x="416" y="296"/>
+      <circ-port height="10" pin="820,370" width="10" x="595" y="205"/>
+      <circ-port height="10" pin="820,460" width="10" x="595" y="295"/>
+      <circ-anchor facing="east" height="6" width="6" x="597" y="207"/>
+    </appear>
+    <wire from="(530,350)" to="(530,440)"/>
+    <wire from="(530,440)" to="(580,440)"/>
+    <wire from="(530,350)" to="(660,350)"/>
+    <wire from="(500,480)" to="(660,480)"/>
+    <wire from="(500,390)" to="(660,390)"/>
+    <wire from="(610,440)" to="(660,440)"/>
+    <wire from="(720,370)" to="(820,370)"/>
+    <wire from="(450,350)" to="(530,350)"/>
+    <wire from="(450,390)" to="(500,390)"/>
+    <wire from="(710,460)" to="(820,460)"/>
+    <wire from="(500,390)" to="(500,480)"/>
+    <comp lib="0" loc="(820,460)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="B"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="6" loc="(659,581)" name="Text">
+      <a name="text" val="D is Difference and B is Borrow and We are doing X-Y"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(720,370)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(450,390)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="6" loc="(657,252)" name="Text">
+      <a name="text" val="Half Subtractor Using XOR and AND Gates"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(710,460)" name="AND Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(450,350)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(820,370)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="D"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(610,440)" name="NOT Gate">
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+  </circuit>
+  <circuit name="Full_Subtractor">
+    <a name="circuit" val="Full_Subtractor"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(200,360)" to="(390,360)"/>
+    <wire from="(200,450)" to="(390,450)"/>
+    <wire from="(800,580)" to="(850,580)"/>
+    <wire from="(660,540)" to="(850,540)"/>
+    <wire from="(970,360)" to="(1160,360)"/>
+    <wire from="(1060,580)" to="(1160,580)"/>
+    <wire from="(710,580)" to="(770,580)"/>
+    <wire from="(570,450)" to="(610,450)"/>
+    <wire from="(660,450)" to="(660,540)"/>
+    <wire from="(660,450)" to="(790,450)"/>
+    <wire from="(710,360)" to="(710,580)"/>
+    <wire from="(200,540)" to="(660,540)"/>
+    <wire from="(610,600)" to="(1010,600)"/>
+    <wire from="(710,360)" to="(790,360)"/>
+    <wire from="(570,360)" to="(710,360)"/>
+    <wire from="(900,560)" to="(1010,560)"/>
+    <wire from="(610,450)" to="(610,600)"/>
+    <comp lib="0" loc="(200,360)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(1160,580)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="B"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(200,450)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(1060,580)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(900,560)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp loc="(570,360)" name="Half_Subtractor"/>
+    <comp loc="(970,360)" name="Half_Subtractor"/>
+    <comp lib="1" loc="(800,580)" name="NOT Gate"/>
+    <comp lib="6" loc="(643,230)" name="Text">
+      <a name="text" val="Ful Subtractor Using Two Half Subtractors and Mix of OR and And Gates"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(200,540)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Z"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="6" loc="(659,684)" name="Text">
+      <a name="text" val="D is Difference and B is Borrow and We are doing X-Y-Z"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(1160,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="D"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+  </circuit>
+  <circuit name="Full_Subtractor_Using_Nand_Gates">
+    <a name="circuit" val="Full_Subtractor_Using_Nand_Gates"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(960,390)" to="(1010,390)"/>
+    <wire from="(960,570)" to="(1010,570)"/>
+    <wire from="(800,480)" to="(850,480)"/>
+    <wire from="(850,550)" to="(900,550)"/>
+    <wire from="(850,410)" to="(900,410)"/>
+    <wire from="(360,310)" to="(360,380)"/>
+    <wire from="(360,380)" to="(360,450)"/>
+    <wire from="(690,460)" to="(740,460)"/>
+    <wire from="(690,500)" to="(740,500)"/>
+    <wire from="(1010,670)" to="(1130,670)"/>
+    <wire from="(470,290)" to="(520,290)"/>
+    <wire from="(470,470)" to="(520,470)"/>
+    <wire from="(310,380)" to="(360,380)"/>
+    <wire from="(850,480)" to="(850,550)"/>
+    <wire from="(850,410)" to="(850,480)"/>
+    <wire from="(1110,470)" to="(1340,470)"/>
+    <wire from="(360,310)" to="(410,310)"/>
+    <wire from="(360,450)" to="(410,450)"/>
+    <wire from="(200,360)" to="(250,360)"/>
+    <wire from="(200,400)" to="(250,400)"/>
+    <wire from="(690,500)" to="(690,590)"/>
+    <wire from="(520,350)" to="(560,350)"/>
+    <wire from="(520,390)" to="(560,390)"/>
+    <wire from="(690,370)" to="(690,460)"/>
+    <wire from="(520,710)" to="(1130,710)"/>
+    <wire from="(1010,450)" to="(1050,450)"/>
+    <wire from="(1010,490)" to="(1050,490)"/>
+    <wire from="(520,390)" to="(520,470)"/>
+    <wire from="(200,270)" to="(200,360)"/>
+    <wire from="(200,400)" to="(200,490)"/>
+    <wire from="(100,490)" to="(200,490)"/>
+    <wire from="(100,270)" to="(200,270)"/>
+    <wire from="(1010,490)" to="(1010,570)"/>
+    <wire from="(690,370)" to="(900,370)"/>
+    <wire from="(690,590)" to="(900,590)"/>
+    <wire from="(1010,570)" to="(1010,670)"/>
+    <wire from="(200,270)" to="(410,270)"/>
+    <wire from="(200,490)" to="(410,490)"/>
+    <wire from="(100,590)" to="(690,590)"/>
+    <wire from="(1010,390)" to="(1010,450)"/>
+    <wire from="(620,370)" to="(690,370)"/>
+    <wire from="(520,290)" to="(520,350)"/>
+    <wire from="(520,470)" to="(520,710)"/>
+    <wire from="(1190,690)" to="(1340,690)"/>
+    <comp lib="1" loc="(960,390)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(620,370)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(100,590)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Z"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(1340,690)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="B"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(100,490)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(800,480)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(100,270)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(470,470)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="6" loc="(692,186)" name="Text">
+      <a name="text" val="Full Subtractor Using Minimum Number of NAND Gates"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(1190,690)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="6" loc="(701,795)" name="Text">
+      <a name="text" val="D is Difference and B is Borrow and We are doing X-Y-Z"/>
+      <a name="font" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="0" loc="(1340,470)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="D"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(470,290)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(310,380)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(1110,470)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+    <comp lib="1" loc="(960,570)" name="NAND Gate">
+      <a name="inputs" val="2"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+    </comp>
+  </circuit>
+</project>
