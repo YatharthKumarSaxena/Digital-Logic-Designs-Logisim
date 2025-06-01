@@ -4,7 +4,7 @@ This day was all about designing and simulating **4-bit Adder and Subtractor cir
 
 ---
 
-## 🧠 What I Learned on Day-5
+## 🧠 What I Learned on Day-6
 
 I explored how to construct:
 - 🧮 **Half Adder** – using a mix of gates  
@@ -27,19 +27,20 @@ You can open it and test each sub-circuit by providing binary inputs.
 
 ## 📁 Folder Structure
 
-This folder contains a total of **4 files**:
+This folder contains a total of **5 files**:
 
-- 🖼️ **3 screenshots** – showing:
+- 🖼️ **4 screenshots** – showing:
   - Half Adder using basic gates
   - Full Adder using two Half Adders
-  - 4-bit Adder-Subtractor  
-- 📂 **1 `.circ` file** – the Logisim simulation file named `AdderSubtractor.circ`
+  - 4-Bit Parallel Adder
+  - BCD Adder
+- 📂 **1 `.circ` file** – the Logisim simulation file named `BCD_Adder.circ`
 
 ---
 
 ## 🧪 Simulation Instructions
 
-> Open the `AdderSubtractor.circ` file using **Logisim**.
+> Open the `BCD_Adder.circ` file using **Logisim**.
 
 Within the file:
 - You’ll find Half Adder, Full Adder, and the complete 4-bit Adder-Subtractor modules.
