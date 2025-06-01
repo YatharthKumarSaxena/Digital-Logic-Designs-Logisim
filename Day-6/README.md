@@ -1,62 +1,61 @@
-# ➕ Welcome to the Day-6 Digital Logic Circuits!
+# 🧮 Welcome to the BCD Adder Simulation (Day-6 Folder)!
 > **I'm the README.md file of this folder, here to guide you step-by-step!** 🚀  
-This day was all about designing and simulating **4-bit Adder and Subtractor circuits** using Logisim. No hardware components were used — this was a **pure simulation-based experiment**.
+This folder contains the simulation of a **BCD (Binary-Coded Decimal) Adder** circuit implemented in **Logisim**.
 
 ---
 
-## 🧠 What I Learned on Day-6
+## 🧠 What I Learned in the Basics Folder
 
-I explored how to construct:
-- 🧮 **Half Adder** – using a mix of gates  
-- 🧮 **Full Adder** – by combining two Half Adders  
-- 🧮 **4-Bit Parallel Adder**
-- 🧮 **BCD Adder**
+In this experiment, I designed and simulated a **BCD Adder** by building on concepts from previous experiments:
 
-This helped deepen my understanding of **binary addition and subtraction at the gate level**, as well as the reusability of simple units (like Half Adders) in larger composite circuits.
+- 🔄 Reused components like **Half Adder** and **Full Adder** from [Day-5](../Day-5/)
+- 🧱 Designed a **Parallel Adder**
+- 🧮 Built the BCD Adder by adjusting the output for binary values exceeding 9
+
+Through this, I solidified my understanding of **decimal-binary conversions**, **carry corrections**, and how **BCD operations differ from binary arithmetic**.
 
 ---
 
-## 💻 Simulation Details
+## 💻 Simulation Insights
 
-This experiment was **completely simulated in Logisim**.  
-No physical hardware (ICs, breadboards) was used.
+This was a **simulation-only** experiment using **Logisim**.  
+The BCD Adder was built by chaining together adders and then conditionally adjusting output using the **"add 6"** rule when the sum exceeded 9.
 
-The Logisim file `AdderSubtractor.circ` (note: 'A' and 'S' capitalized) contains all the implementations.  
-You can open it and test each sub-circuit by providing binary inputs.
+> A key point:  
+> ✅ The circuit handles values **only up to 19**.  
+> ❗This is because:
+> - Each BCD input is limited to 0–9.
+> - So, the maximum sum (9 + 9 + carry) = **19**
+> - Beyond this, the input is no longer valid in BCD format.
 
 ---
 
 ## 📁 Folder Structure
 
-This folder contains a total of **5 files**:
+This folder contains:
 
-- 🖼️ **4 screenshots** – showing:
-  - Half Adder using basic gates
-  - Full Adder using two Half Adders
-  - 4-Bit Parallel Adder
-  - BCD Adder
-- 📂 **1 `.circ` file** – the Logisim simulation file named `BCD_Adder.circ`
+- 🖼️ **Screenshots** showing the internal working of the Parallel Adder and BCD Adder
+- 📂 **`.circ` file** with a complete Logisim simulation of the BCD Adder
 
 ---
 
 ## 🧪 Simulation Instructions
 
-> Open the `BCD_Adder.circ` file using **Logisim**.
+> Open the `.circ` file using **Logisim**.
 
-Within the file:
-- You’ll find Half Adder, Full Adder, and the complete 4-bit Adder-Subtractor modules.
-- To test subtraction, use the XOR gate logic with a control input (1 = Subtract, 0 = Add).
-- Try different 4-bit inputs to verify outputs.
+Inside, you’ll find:
+- A **Parallel Adder** to sum two 4-bit binary numbers  
+- A logic block that **adds 6** when necessary to adjust the result to valid BCD  
+- You can try inputs like 8 + 9, 7 + 7, or 9 + 9 + 1 (carry-in) to see how the circuit handles values up to 19
 
 ---
 
 ## 🎯 **Final Takeaway**
 
-This simulation taught me how:
-✔️ Binary arithmetic works at the logic gate level  
-✔️ Small modular units like Half Adders can be scaled to complex systems  
-✔️ XOR gates help in toggling between addition and subtraction dynamically  
-✔️ Pure simulation can sometimes be more efficient than hardware for early prototyping
+This experiment taught me how:
+✔️ BCD arithmetic needs adjustment logic beyond basic binary addition  
+✔️ Simple Full Adder and Parallel Adder units can scale up to decimal systems  
+✔️ Input constraints define circuit boundaries — in this case, valid up to 19  
+✔️ Reusability of previous circuit blocks can save time and maintain modularity
 
 ---
-
