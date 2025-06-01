@@ -44,9 +44,9 @@ This trick allowed us to **simulate NOT logic without using a NOT gate**.
 
 ## 📁 Folder Structure
 
-This folder contains a total of **3 files**:
+This folder contains a total of **4 files**:
 
-- 🖼️ **2 screenshots**: showcasing the hardware-equivalent circuit in Logisim  
+- 🖼️ **3 screenshots**: showcasing the hardware-equivalent circuit in Logisim  
 - 🔌 **1 `.circ` file**: Logisim implementation of the 4x1 MUX-based function
 
 ---
