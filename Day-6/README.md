@@ -9,7 +9,8 @@ This day was all about designing and simulating **4-bit Adder and Subtractor cir
 I explored how to construct:
 - 🧮 **Half Adder** – using a mix of gates  
 - 🧮 **Full Adder** – by combining two Half Adders  
-- 🧮 **4-bit Adder-Subtractor** – using Full Adders and XOR-controlled subtraction logic
+- 🧮 **4-Bit Parallel Adder**
+- 🧮 **BCD Adder**
 
 This helped deepen my understanding of **binary addition and subtraction at the gate level**, as well as the reusability of simple units (like Half Adders) in larger composite circuits.
 
