@@ -1,4 +1,4 @@
-# ➕ Welcome to the Day-5 Digital Logic Circuits!
+# ➕ Welcome to the Day-6 Digital Logic Circuits!
 > **I'm the README.md file of this folder, here to guide you step-by-step!** 🚀  
 This day was all about designing and simulating **4-bit Adder and Subtractor circuits** using Logisim. No hardware components were used — this was a **pure simulation-based experiment**.
 
