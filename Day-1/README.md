@@ -32,15 +32,13 @@ Hence, I used the **NAND gate as a NOT gate** (by shorting its inputs), a standa
 
 ---
 
+
 ## 📁 Folder Structure
 
 This folder contains a total of **3 files**:
 
-| File Name                   | 🗂️ Type        | Description |
-|-----------------------------|----------------|-------------|
-| 🖼️ `AND_OR_NOT.png`         | Image          | Screenshot of the logic gates implemented using ICs. |
-| 🖼️ `IC_Implementation.png`  | Image          | Hardware implementation of the Full Subtractor using only NAND gates. |
-| 🔌 `Day-1.circ`              | Logisim Circuit | The circuit simulated in Logisim for demonstration. |
+- 🖼️ **3 screenshots**: showing the NAND-based Full Subtractor and Full Subtractor Implemented by AND,OR,XOR and NOT Gates  
+- 🔌 **1 `.circ` file**: Logisim circuit containing both designs
 
 ---
 
