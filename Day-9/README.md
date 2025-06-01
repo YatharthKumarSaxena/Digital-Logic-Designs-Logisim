@@ -47,16 +47,16 @@ This design helped bridge the understanding between simple counters and **contro
 
 ## 📁 Folder Structure
 
-This folder contains:
+This folder contains a total of **5 files**, including:
 
-- 🔁 `Sequence Generator.circ`  
-  > The main Logisim simulation file that includes:
-  > - ✅ Master-Slave T Flip-Flop design  
-  > - ✅ 3-bit Binary Counter  
-  > - ✅ 3x8 Decoder  
-  > - ✅ Final Sequence Generator Circuit
+- 🔁 `Sequence_Generator.circ`  
+- ✅ The **Day-9 Folder** that includes the following 4 screenshots:  
+  > - Master-Slave T Flip-Flop Design  
+  > - 3-bit Binary Counter  
+  > - 3x8 Decoder  
+  > - Final Sequence Generator Circuit
 
-There are **no extra screenshots**, as everything is fully embedded and viewable in the `.circ` simulation.
+> 📝 Only the `.circ` file contains the **fully working simulation**. The screenshot is provided for overview/documentation only.
 
 ---
 
