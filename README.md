@@ -1,5 +1,5 @@
 # 🔌 Welcome to the Digital-Logic-Designs-Logisim Repo!
-> **I'm the README.md file of this folder, here to guide you step-by-step!** 🚀
+> **I'm the README.md file of this folder to assist you, here to guide you step-by-step!** 🚀
 
 This repository is a digital showcase of my practical journey through the **Digital Logic and System Design** course in the 3rd semester. Here, I've recreated and simulated a wide range of **combinational and sequential logic circuits** using **Logisim**, some of which were also **physically implemented on a Digital IC Trainer Kit** during college labs.
 
